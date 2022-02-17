@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Canvas Pigeon</title>
+</head>
+<body>
+
+<canvas id="canvas" width="1000" height="1000" style="border:1px solid #d3d3d3;">
+</canvas>
+
+
+<script>
+var c= document.getElementById("canvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(25, 200);
+ctx.lineTo(240, 200); 
+
+ctx.lineTo(240, 70); 
+ctx.arc(250, 37, 30, 2, 2 * Math.PI);
+ctx.arc(250, 37, 30, 0, 2 * Math.PI);
+ctx.lineTo(300, 47); 
+ctx.lineTo(275, 55); 
+
+ctx.lineTo(265, 65); 
+ctx.lineTo(265, 210); 
+ctx.arcTo(265, 370, 20, 240, 100);
+ctx.lineTo(25, 200); 
+
+ctx.lineTo(195, 200); 
+ctx.arc(165, 210, 60, 0, 1 * Math.PI);
+
+ctx.moveTo(270, 40);
+ctx.arc(250, 37, 20, 0, 2 * Math.PI);
+
+ctx.moveTo(260, 40);
+ctx.arc(250, 37, 10, 0, 2 * Math.PI);
+
+ctx.moveTo(195, 300);
+ctx.lineTo(195, 360); 
+
+ctx.moveTo(155, 303);
+ctx.lineTo(155, 360); 
+
+ctx.moveTo(240, 100);
+ctx.lineTo(265, 100); 
+
+ctx.moveTo(240, 120);
+ctx.lineTo(265, 120); 
+
+ctx.stroke(); 
+
+
+
+
+</script>
+
+</script>
+
+</body>
+</html>
